@@ -14,8 +14,8 @@
 </head>
 
 <body>
-     <style>
-         body {
+    <style>
+        body {
             margin: 0;
             font-family: "Arial", sans-serif;
             background-color: #0d4fa3;
@@ -23,7 +23,7 @@
         }
 
         header {
-            background-color: #0b3f85;
+            background-color: rgb(26, 93, 164);
             padding: 25px 0;
             text-align: center;
             color: white;
@@ -34,7 +34,7 @@
         nav {
             text-align: center;
             padding: 10px;
-            background-color: #0b3f85;
+            background-color: rgb(26, 93, 164);
         }
 
         nav a {
@@ -56,7 +56,7 @@
             color: #0b3f85;
             padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
         }
 
         .contato-box h2 {
@@ -70,7 +70,8 @@
             font-size: 16px;
         }
 
-        input, textarea {
+        input,
+        textarea {
             width: 100%;
             padding: 12px;
             margin: 10px 0 20px 0;
@@ -82,7 +83,7 @@
         button {
             width: 100%;
             padding: 15px;
-            background-color: #0b3f85;
+            background-color: rgb(26, 93, 164);
             color: white;
             border: none;
             border-radius: 8px;
@@ -136,28 +137,28 @@
     <!-- Script WhatsApp -->
     <script>
         function enviarWhatsApp() {
-    const nome = document.getElementById("nome").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const mensagem = document.getElementById("mensagem").value.trim();
+            const nome = document.getElementById("nome").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const mensagem = document.getElementById("mensagem").value.trim();
 
-    // Verificação dos campos
-    if (!nome || !email || !mensagem) {
-        alert("⚠️ Todos os campos devem ser preenchidos antes de enviar.");
-        return;
-    }
+            // Verificação dos campos
+            if (!nome || !email || !mensagem) {
+                alert("⚠️ Todos os campos devem ser preenchidos antes de enviar.");
+                return;
+            }
 
-    // Mensagem personalizada
-    const texto = `Oi, meu nome é ${nome} e meu email é ${email}.%0A` +
-                  `Mensagem: ${mensagem}`;
+            // Mensagem personalizada
+            const texto = `Oi, meu nome é ${nome} e meu email é ${email}.%0A` +
+                `Mensagem: ${mensagem}`;
 
-    // Número fictício (exemplo)
-    const telefone = "5519986075321"; // coloque o número fictício aqui
+            const telefone = "5519986075321";
 
-    // Redireciona pro WhatsApp
-    window.open(`https://wa.me/${telefone}?text=${texto}`, "_blank");
-}
+            //  Redireciona pro WhatsApp
+            window.open(`https://wa.me/${telefone}?text=${texto}`, "_blank");
+        }
 
     </script>
 
 </body>
+
 </html>

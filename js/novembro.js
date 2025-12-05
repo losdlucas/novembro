@@ -1,7 +1,7 @@
 // Criar a lista de imagens
 let imagens = [
     'img/NOVEMBRO AZUL (1).svg',
-    'img/NOVEMBRO (1).svg',
+    'img/Design sem nome (1).svg',
     'img/NOVEMBRO AZUL.svg'
 ]
 
