@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Novembro Azul</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Caprasimo&family=Dancing+Script:wght@400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/novembro.css">
+</head>
+
+<body>
+     <style>
+         body {
+            margin: 0;
+            font-family: "Arial", sans-serif;
+            background-color: #0d4fa3;
+            color: white;
+        }
+
+        header {
+            background-color: #0b3f85;
+            padding: 25px 0;
+            text-align: center;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        nav {
+            text-align: center;
+            padding: 10px;
+            background-color: #0b3f85;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .contato-box {
+            width: 60%;
+            margin: 50px auto;
+            background-color: #ffffff;
+            color: #0b3f85;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        }
+
+        .contato-box h2 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0 20px 0;
+            border-radius: 8px;
+            border: 2px solid #0b3f85;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #0b3f85;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #093566;
+        }
+    </style>
+    <header>
+
+        <div class="logo">
+            <img src="assets/img/unnamed.png" alt="">
+        </div>
+        <div class="container">
+            <h1>Novembro Azul</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../index.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="../pages/contato.html">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Caixa de Contato -->
+    <div class="contato-box">
+        <h2>Fale Conosco</h2>
+
+        <form id="formContato">
+            <label>Nome:</label>
+            <input type="text" id="nome" required>
+
+            <label>Email:</label>
+            <input type="email" id="email" required>
+
+            <label>Mensagem:</label>
+            <textarea id="mensagem" rows="5" required></textarea>
+
+            <button type="button" onclick="enviarWhatsApp()">Enviar via WhatsApp</button>
+        </form>
+    </div>
+
+    <!-- Script WhatsApp -->
+    <script>
+        function enviarWhatsApp() {
+    const nome = document.getElementById("nome").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const mensagem = document.getElementById("mensagem").value.trim();
+
+    // Verificação dos campos
+    if (!nome || !email || !mensagem) {
+        alert("⚠️ Todos os campos devem ser preenchidos antes de enviar.");
+        return;
+    }
+
+    // Mensagem personalizada
+    const texto = `Oi, meu nome é ${nome} e meu email é ${email}.%0A` +
+                  `Mensagem: ${mensagem}`;
+
+    // Número fictício (exemplo)
+    const telefone = "5519986075321"; // coloque o número fictício aqui
+
+    // Redireciona pro WhatsApp
+    window.open(`https://wa.me/${telefone}?text=${texto}`, "_blank");
+}
+
+    </script>
+
+</body>
+</html>

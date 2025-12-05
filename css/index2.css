@@ -1,0 +1,138 @@
+ {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ods-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.ods {
+  background-color: #eef6ff;
+  border: #0C2D48 2px solid;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 15%;
+  box-shadow: 2px 2px 8px rgba( 0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  padding: 8px;
+  background-color: #0C2D48;
+  color: #eef6ff;
+}
+
+.ods img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.ods p {
+margin-top: 10px;
+margin-bottom: 3px;
+font-size: larger;
+}
+
+.ods:hover {
+  transform: scale(1.05);
+}
+
+body {
+    margin: 0px;
+    background-color: #eef6ff;
+    color: #0C2D48;
+}
+
+header {
+  background-color: #0C2D48;
+  color: #eef6ff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #0C2D48;
+  color: #eef6ff;
+  padding: 10px;
+}
+
+.ods-container-pg2 {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #0C2D48;
+  display: flex;
+  gap: 20px;
+}
+
+.ods-container-pg2 img {
+  border-radius: 8px;
+  border: #eef6ff 2px solid;
+  width: 40%;
+}
+
+#main-pg2 {
+  padding: 20px;
+}
+
+.ods-container-2-pg2 {
+  display: flex;
+  flex-grow: 1;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.ods-container-2-pg2 h2 {
+  background-color: #eef6ff;
+  color: #0C2D48;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 0;
+  height: fit-content;
+}
+
+.ods-container-2-pg2 {
+  background-color: #eef6ff;
+  border-radius: 8px;
+  padding: 15px;
+  flex-grow: inherit;
+  margin: 0;
+  color: #0C2D48;
+}
+
+.ods-container-2-pg2 ul {
+  background-color: #eef6ff;
+  color: #0C2D48;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 0;
+}
+
+.ods-container-2-pg2 ul h3 {
+  margin-top: 0;
+}
+
+h3 {
+  margin: 0px;
+}
+
+h4 {
+  margin: 0px;
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    color: orange;
+}

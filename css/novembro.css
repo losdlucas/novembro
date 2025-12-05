@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Archivo Black", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+body {
+    line-height: 1.6;
+    margin-bottom: 100px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+header {
+    background-color: rgb(26, 93, 164);
+    color: white;
+    padding: 30px;
+    display: flex;
+
+}
+
+header h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    color: orange;
+}
+
+.img-carrossel {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+
+/* .container h2 {
+    text-align: center;
+    font-size: 50px;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container p {
+    text-align: center;
+    font-size: 20px;
+} */
+
+.menu-cardapio {
+    padding: 30px 0px;
+}
+
+.menu-cardapio-itens {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-cardapio-item {
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    width: 30%;
+    padding: 20px;
+}
+
+.menu-cardapio h2 {
+    font-family: "Archivo Black", sans-serif;
+    text-align: center;
+    font-size: 50px;
+}
+
+footer {
+    background-color: rgb(30, 30, 73);
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo img {
+    width: 180px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.link-admin:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    color: orange;
+}
+
+.logo {
+    width: 0;
+}
+
+.link-admin {
+    text-decoration: none;
+    position: absolute;
+    right: 0;
+    color: white;
+    padding: 10px;
+    padding-right: 20px;
+}
+
+.archivo-black-regular {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
